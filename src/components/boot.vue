@@ -57,6 +57,7 @@
     width: 100%;
     height: 671px;
     margin: 0px;
+    background: #000;
     background-image: url("../../static/img/boot.png");
     background-size: 100%;
     background-repeat: no-repeat;
@@ -69,7 +70,7 @@
     margin: 0px;
     width: 100%;
     height: 100%;
-    background: rgb(42,42,42);
+    background: rgb(42, 42, 42);
     opacity: 92%;
 
   }

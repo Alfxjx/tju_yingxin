@@ -5,10 +5,15 @@
       <img src="../../static/img/side.png" alt="">
       <img src="../../static/img/side.png" alt="">
       <img src="../../static/img/side.png" alt="">
+      <img src="../../static/img/side.png" alt="">
+      <img src="../../static/img/side.png" alt="">
     </div>
     <div class="main">
+      <login></login>
     </div>
     <div class="side-right">
+      <img src="../../static/img/side.png" alt="">
+      <img src="../../static/img/side.png" alt="">
       <img src="../../static/img/side.png" alt="">
       <img src="../../static/img/side.png" alt="">
       <img src="../../static/img/side.png" alt="">
@@ -18,8 +23,13 @@
 </template>
 
 <script type="text/ecmascript-6">
+  import login from './login'
+
   export default {
-    name: "login"
+    name: 'view',
+    components: {
+      login
+    }
   }
 </script>
 

@@ -19,7 +19,7 @@
   }
 </script>
 
-<style>
+<style scoped>
   @import "../common/font/font.css";
 
   .tab {
