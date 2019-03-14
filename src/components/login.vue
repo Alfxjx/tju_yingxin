@@ -38,8 +38,8 @@
     <div class="danmu">
       <div class="flow"></div>
       <div class="ctrl">
-        <input type="text" placeholder="登录发送弹幕">
-        <button>发送</button>
+        <input class="danmu-input" type="text" placeholder="登录发送弹幕">
+        <button class="send">发送</button>
       </div>
     </div>
     <!--<img src="../../static/img/door.png" alt="">-->
@@ -67,10 +67,17 @@
   .wrapper {
     display: flex;
     position: relative;
+    height: 521px;
+    margin-right: 50px;
+    background-image: url("../../static/img/door.png");
+    background-position: right;
+    background-size: 1145px 521px;
+    background-repeat: no-repeat;
   }
 
   .hint-wrapper {
     background-color: #426A94;
+    height: 330px;
     box-shadow: 5px 5px 3px #aaaaaa;
     margin-left: 94px;
     margin-top: 20px;
@@ -157,13 +164,12 @@
     flex-direction: column;
     justify-content: center;
     margin-left: 55px;
-    padding-top: 66px;
+    padding-top: 0px;
   }
 
   .username {
     margin-bottom: 10px;
     background-color: #2A2A2A;
-    opacity: 0.49;
     width: 235px;
     border: 1px solid black;
     border-radius: 25px;
@@ -179,7 +185,6 @@
   .password {
     margin-bottom: 10px;
     background-color: #2A2A2A;
-    opacity: 0.49;
     width: 235px;
     border: 1px solid black;
     border-radius: 25px;
@@ -188,13 +193,14 @@
     color: white;
     font-size: 18px;
   }
+
   .password::-webkit-input-placeholder {
     color: white;
     font-size: 18px;
   }
+
   .login-button {
     background-color: #2A2A2A;
-    opacity: 0.49;
     width: 235px;
     border: 1px solid black;
     border-radius: 25px;
@@ -207,6 +213,32 @@
   .danmu {
     display: flex;
     flex-direction: column;
+    position: absolute;
+    bottom: 20px;
+    right: 24px;
+  }
+
+  .danmu-input {
+    width: 234px;
+    height: 30px;
+    border-radius: 15px;
+    color: white;
+    background-color: #2A2A2A;
+    opacity: 0.21;
+  }
+
+  .danmu-input::-webkit-input-placeholder {
+    text-align: center;
+    color: white;
+  }
+
+  .send {
+    width: 73px;
+    height: 30px;
+    border-radius: 15px;
+    background-color: #2A2A2A;
+    opacity: 0.21;
+    color: white;
   }
 
   .flow {

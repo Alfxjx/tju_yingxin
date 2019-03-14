@@ -1,20 +1,14 @@
 <template>
   <div id="app">
-    <tab></tab>
-    <home></home>
-    <login></login>
-    <boot></boot>
+    <router-view></router-view>
   </div>
 </template>
 <script type="text/ecmascript-6">
-  import tab from './components/tab'
-  import home from './components/home'
-  import login from './components/view'
-  import boot from './components/boot'
+  import index from './page/index'
 
   export default {
     components: {
-      tab, home, login, boot
+      index
     }
   }
 </script>
