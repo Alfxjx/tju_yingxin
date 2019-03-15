@@ -58,6 +58,7 @@
     methods: {
       login () {
         console.log('login')
+        this.$router.push('/query')
       }
     }
   }

@@ -70,10 +70,10 @@
     display: flex;
     flex-direction: column;
     width: 100%;
+    margin: -8px;
   }
 
   .upper {
-    flex: 1;
     height: 565px;
     background-color: rgb(53, 180, 235);
     display: flex;
@@ -125,7 +125,6 @@
   }
 
   .bot {
-    flex: 1;
     height: 720px;
     background-color: rgb(51, 51, 51);
     display: flex;

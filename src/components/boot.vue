@@ -70,8 +70,7 @@
     margin: 0px;
     width: 100%;
     height: 100%;
-    background: rgb(42, 42, 42);
-    opacity: 92%;
+    background: rgba(42, 42, 42, 0.9);
 
   }
 
