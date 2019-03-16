@@ -23,7 +23,7 @@
   @import "../common/font/font.css";
 
   .tab {
-    width: 100%;
+    width: 1860px;
     height: 51px;
     background: linear-gradient(#D6DDEB, #879DBC);
   }

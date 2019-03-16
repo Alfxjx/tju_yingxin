@@ -9,7 +9,7 @@
       <img src="../../static/img/side.png" alt="">
     </div>
     <div class="main">
-      <login></login>
+      <login class="login-component"></login>
       <xuzhi></xuzhi>
       <news></news>
     </div>
@@ -45,6 +45,10 @@
   .main {
     flex: 1;
     background-color: #DAF2FD;
+  }
+
+  .login-component {
+    z-index: 20;
   }
 
   .side-left, .side-right {

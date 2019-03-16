@@ -1,7 +1,24 @@
 <template>
   <div class="xuzhi">
-    <div class="swiper">
-      <img src="../../static/img/swiper.png" width="806" height="658" alt="">
+    <div class="swiper" @mouseenter="_stop" @mouseleave="_begin">
+      <!--<img src="../../static/img/swiper.png" width="806" height="658" alt="">-->
+      <ul class="dot">
+        <li
+          class="dot-li"
+          v-for="(picItem, index) in piclist"
+          :key="index"
+          :class="{active:currentIndex===index}"
+          @click="changePic"
+        >·
+        </li>
+      </ul>
+      <ul class="core-swiper">
+        <transition-group name="swipe">
+          <li v-for="(picItem, index) in piclist" :key="index" v-show="index===currentIndex" class="core-list">
+            <img :src="picItem.src" width="806" height="658" alt="">
+          </li>
+        </transition-group>
+      </ul>
     </div>
     <div class="list">
       <div class="list-wrapper">
@@ -33,6 +50,13 @@
     name: 'xuzhi',
     data () {
       return {
+        piclist: [
+          {name: '1', src: '../../static/img/swiper.png'},
+          {name: '2', src: '../../static/img/door.png'},
+          {name: '3', src: '../../static/img/swiper.png'}
+        ],
+        currentIndex: 0,
+        swiperTimer: null,
         list: [
           {name: '入校行程', link: '#'},
           {name: '先找学院', link: '#'},
@@ -43,9 +67,27 @@
         ]
       }
     },
+    mounted () {
+      this._begin()
+    },
     methods: {
       listWidth (index) {
         return this.list[index].name.length > 4 ? '246px' : '150px'
+      },
+      changePic (e) {
+        this.currentIndex = parseInt(e.target.dataset.index)
+      },
+      _begin () {
+        this.swiperTimer = setInterval(this.autoplay, 4000)
+      },
+      _stop () {
+        clearInterval(this.swiperTimer)
+      },
+      autoplay () {
+        this.currentIndex++
+        if (this.currentIndex >= this.piclist.length) {
+          this.currentIndex = 0
+        }
       }
     }
   }
@@ -55,17 +97,54 @@
   .xuzhi {
     padding-left: 35px;
     margin-top: -64px;
+    margin-bottom: 50px;
     display: flex;
     flex-direction: row;
   }
 
   .swiper {
+    position: relative;
+  }
 
+  .core-list {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .dot {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    bottom: -30px;
+    left: 10px;
+    z-index: 10;
+    margin-left: 20px;
+  }
+
+  .dot-li {
+    line-height: 20px;
+    font-weight: 700;
+    font-size: 50px;
+    margin-left: 10px;
+    color: white;
+  }
+
+  .swiper ul {
+    padding: 0px;
+  }
+
+  .swiper ul li {
+    list-style: none;
+  }
+
+  .swipe-enter-active, .swipe-leave-active {
+    transition: all 1s;
   }
 
   .list {
     background-color: rgba(247, 201, 62, 0.96);
-    margin-left: -157px;
+    margin-left: 650px;
     margin-top: 60px;
     z-index: 10;
     height: 542px;
@@ -98,6 +177,7 @@
 
   .title {
     background-color: rgb(66, 106, 148);
+    z-index: 7;
     width: 484px;
     height: 376px;
     margin-top: 228px;

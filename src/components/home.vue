@@ -1,28 +1,24 @@
 <template>
   <div class="home">
-    <div class="flex-side"></div>
-    <div class="image-wrapper">
-      <img src="../../static/img/head.png" width="100%" alt="">
-      <div class="welcome">
-        <img class="logo" src="../../static/img/logo.png" width="157px" height="137px" alt="">
-        <div class="title-wrapper">
-          <span class="title">{{title}}</span>
-          <span class="sub-title">{{subTitle}}</span>
-        </div>
+    <img src="../../static/img/head.png" width="1594px" height="600px" alt="">
+    <div class="welcome">
+      <img class="logo" src="../../static/img/logo.png" width="157px" height="137px" alt="">
+      <div class="title-wrapper">
+        <span class="title">{{title}}</span>
+        <span class="subtitle">{{subTitle}}</span>
       </div>
-      <div class="cover"></div>
-      <!--<div class="line">-->
-        <!--<img src="../../static/img/line1.png" width="416" height="163" alt="">-->
-      <!--</div>-->
     </div>
-    <div class="flex-side"></div>
+    <div class="cover"></div>
+    <!--<div class="line">-->
+    <!--<img src="../../static/img/line1.png" width="416" height="163" alt="">-->
+    <!--</div>-->
   </div>
 </template>
 
 <script type="text/ecmascript-6">
   export default {
-    name: "home",
-    data() {
+    name: 'home',
+    data () {
       return {
         title: '欢迎来到天津大学！',
         subTitle: 'Welcome to Tianjin University'
@@ -31,75 +27,53 @@
   }
 </script>
 <style scoped>
-  .home{
+
+  .home {
     display: flex;
-  }
-  .flex-side{
-    flex: 0 0 132px
-  }
-  .image-wrapper {
-    flex: 1;
+    flex-direction: column;
+    justify-content: center;
     position: relative;
-    width: 100%;
-    padding: 120px 0px 0px 0px;
   }
 
   .welcome {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
     position: absolute;
-    bottom: 45px;
-    left: 27px;
-    margin-left: 50px;
+    left: 55px;
+    bottom: 30px;
     z-index: 10;
   }
 
   .logo {
-    position: absolute;
-    bottom: -15px;
+    margin-right: 30px;
   }
 
   .title-wrapper {
-    display: inline-block;
-    margin-left: 167px;
-    padding-top: 20px;
-    vertical-align: center;
+    display: flex;
+    height: 137px;
+    flex-direction: column;
+    justify-content: center;
   }
 
   .title {
-    display: block;
-    color: #FEC210;
     line-height: 54px;
     font-size: 44px;
-    vertical-align: top;
-    font-family: negreta, arial, sans-serif;
+    color: rgb(254, 194, 16);
   }
 
-  .sub-title {
-    display: block;
-    margin-top: 10px;
+  .subtitle {
     color: #fff;
     line-height: 33px;
     font-size: 25px;
-    vertical-align: top;
-    font-family: "Arial Narrow", sans-serif;
-  }
-
-  .line {
-    display: inline-block;
-    position: absolute;
-    right: 44px;
-    bottom: 0px;
   }
 
   .cover {
-    position: absolute;
-    bottom: 0px;
-    left: 0px;
-    margin-left: 44px;
-    margin-right: 44px;
-    filter: opacity(50%);
-    background: linear-gradient(#fff, #DCF2FD);
+    background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(220, 242, 253, 0.5));
     width: 1512px;
     height: 183px;
+    position: absolute;
+    left: 55px;
+    bottom: 0;
   }
-
 </style>

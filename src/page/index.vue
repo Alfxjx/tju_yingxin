@@ -1,7 +1,9 @@
 <template>
   <div id="index">
     <tab></tab>
-    <home></home>
+    <div class="home-wrapper">
+      <home></home>
+    </div>
     <login-view></login-view>
     <boot></boot>
   </div>
@@ -21,5 +23,12 @@
 <style scoped>
   #index {
     width: 100%;
+  }
+
+  .home-wrapper {
+    width: 1860px;
+    margin-top: 125px;
+    display: flex;
+    justify-content: center;
   }
 </style>

@@ -5,6 +5,7 @@ import success from '../page/success'
 import fail from '../page/fail'
 import error from '../page/error'
 import query from '../page/query'
+import content from '../page/content'
 
 Vue.use(Router)
 
@@ -12,7 +13,8 @@ export default new Router({
   routes: [
     {
       path: '/',
-      redirect: '/index'
+      component: content
+      // redirect: '/index'
     },
     {
       path: '/index',
