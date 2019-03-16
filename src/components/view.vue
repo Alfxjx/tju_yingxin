@@ -10,6 +10,8 @@
     </div>
     <div class="main">
       <login></login>
+      <xuzhi></xuzhi>
+      <news></news>
     </div>
     <div class="side-right">
       <img src="../../static/img/side.png" alt="">
@@ -24,11 +26,13 @@
 
 <script type="text/ecmascript-6">
   import login from './login'
+  import xuzhi from './xuzhi'
+  import news from './news'
 
   export default {
     name: 'view',
     components: {
-      login
+      login, xuzhi, news
     }
   }
 </script>

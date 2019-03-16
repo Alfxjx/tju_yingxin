@@ -101,6 +101,7 @@
     align-items: center;
     justify-content: center;
     margin: 77px 0 48px 0;
+    box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.3);
   }
 
   .card1 {
@@ -132,6 +133,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.3);
   }
 
   .subtitle-wrapper {

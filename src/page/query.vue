@@ -44,8 +44,8 @@
         location: '',
         stuNum: '',
         isShowList: false,
-        isExist: false,
-        noRes: false,
+        isExist: true,
+        noRes: true,
         cities: [
           {name: '北京'},
           {name: '天津'},
@@ -72,11 +72,8 @@
         this.isShowList = false
       },
       query () {
-        if (this.noRes) {
-          this.$router.push('/error')
-        }
         if (this.isExist) {
-          this.$router.push('/success')
+          this.$router.push('/error')
         } else {
           this.$router.push('/fail')
         }

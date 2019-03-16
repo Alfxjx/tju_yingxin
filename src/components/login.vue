@@ -36,6 +36,8 @@
       <button class="login-button" @click="login">登录</button>
     </div>
     <div class="danmu">
+      <img class="label" src="../../static/img/label.png" width="59" height="76" alt="">
+      <span class="to-map" @click="showMap">查看地图</span>
       <div class="flow"></div>
       <div class="ctrl">
         <input class="danmu-input" type="text" placeholder="登录发送弹幕">
@@ -59,6 +61,9 @@
       login () {
         console.log('login')
         this.$router.push('/query')
+      },
+      showMap () {
+        console.log('map')
       }
     }
   }
@@ -110,6 +115,7 @@
     width: 150px;
     height: 150px;
     box-shadow: 5px 5px 5px #797979;
+    z-index: 15;
   }
 
   .deng-item:first-child {
@@ -127,6 +133,7 @@
 
   .login {
     display: flex;
+    z-index: 10;
   }
 
   .list-wrapper {
@@ -164,8 +171,11 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-left: 55px;
+    margin-left: -193px;
     padding-top: 0px;
+    padding-left: 223px;
+    width: 383px;
+    background-color: rgba(255, 255, 255, 0.6);
   }
 
   .username {
@@ -211,12 +221,31 @@
     color: white;
   }
 
+  .label {
+    position: absolute;
+    right: -37px;
+    top: -55px;
+    transform: rotate(30deg);
+  }
+
+  .to-map {
+    color: rgb(1, 84, 120);
+    font-size: 18px;
+    line-height: 20px;
+    transform: rotate(45deg);
+    position: absolute;
+    right: -57px;
+    top: 35px;
+  }
+
   .danmu {
     display: flex;
     flex-direction: column;
     position: absolute;
-    bottom: 20px;
-    right: 24px;
+    bottom: 0px;
+    right: 0px;
+    width: 511px;
+    height: 521px;
   }
 
   .danmu-input {
@@ -248,5 +277,8 @@
 
   .ctrl {
     flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 20px;
   }
 </style>
