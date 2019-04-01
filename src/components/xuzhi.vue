@@ -14,7 +14,7 @@
       </ul>
       <ul class="core-swiper">
         <transition-group name="swipe">
-          <li v-for="(picItem, index) in piclist" :key="index" v-show="index===currentIndex" class="core-list">
+          <li v-for="(picItem, index) in piclist" :key="picItem.name" v-show="index===currentIndex" class="core-list">
             <img :src="picItem.src" width="806" height="658" alt="">
           </li>
         </transition-group>
