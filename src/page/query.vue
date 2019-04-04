@@ -1,12 +1,12 @@
 <template>
   <div class="query">
-    <div class="head">
-      <img src="../../static/img/query-logo.png" width="100%" height="668px" alt="">
-    </div>
-    <div class="main">
+    <!--<div class="head">-->
+    <!--<img src="../../static/img/query-logo.png" width="100%" height="668px" alt="">-->
+    <!--</div>-->
+    <div class="main" :style="{height:calHeight}">
       <div class="login">
         <div class="login-title">
-          <img class="logo" src="../../static/img/logo.png" width="154px" height="127px" alt="">
+          <img class="logo" src="../../static/img/logo.png" width="75px" height="63px" alt="">
           <h1 class="title">本科生录取查询入口</h1>
         </div>
         <div class="input-location">
@@ -33,14 +33,18 @@
         </div>
       </div>
     </div>
+    <boot></boot>
   </div>
 </template>
 
 <script type="text/ecmascript-6">
+  import boot from '../components/boot'
+
   export default {
     name: 'query',
     data () {
       return {
+        calheight: '',
         location: '',
         stuNum: '',
         isShowList: false,
@@ -63,6 +67,9 @@
         ]
       }
     },
+    created () {
+      this.calHeight = window.innerHeight || `700px`
+    },
     methods: {
       showList () {
         this.isShowList = !this.isShowList
@@ -78,6 +85,9 @@
           this.$router.push('/fail')
         }
       }
+    },
+    components: {
+      boot
     }
   }
 </script>
@@ -89,10 +99,12 @@
 
   .main {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
+    padding-left: 200px;
     width: 100%;
-    height: 1240px;
-    background-image: url("../../static/img/side.png");
+    height: 700px;
+    background-image: url("../../static/img/query-logo.png");
+    background-size: 100% 100%;
   }
 
   .login {
@@ -100,9 +112,9 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-top: -100px;
-    width: 1512px;
-    height: 926px;
+    margin-top: 100px;
+    width: 600px;
+    height: 426px;
     background: linear-gradient(rgba(254, 254, 255, 0.7), #DEF4FD, #DCF3FE);
   }
 
@@ -110,7 +122,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 76px;
+    margin-bottom: 20px;
   }
 
   .logo {
@@ -118,7 +130,7 @@
   }
 
   .title {
-    font-size: 53px;
+    font-size: 32px;
     color: rgb(254, 194, 16);
   }
 
@@ -130,45 +142,44 @@
   }
 
   .city-list {
-    background-color: #f3f5f7 !important;
+    background-color: #f3f5f7;
     width: 404px;
     height: 200px;
     overflow: scroll;
     position: absolute;
     top: 111px;
     left: 240px;
-    background-color: white;
     z-index: 10;
   }
 
   .city-item {
-    line-height: 40px;
+    line-height: 30px;
     font-size: 24px;
   }
 
   .hint-province {
     margin: 0px 23px 0 0;
-    width: 217px;
-    line-height: 105px;
-    font-size: 50px;
+    width: 100px;
+    line-height: 50px;
+    font-size: 24px;
     text-align: center;
     color: white;
     background-color: rgb(0, 75, 135);
   }
 
   .input-pro {
-    width: 400px;
-    height: 105px;
+    width: 300px;
+    height: 50px;
   }
 
   .input-pro::-webkit-input-placeholder {
     text-align: center;
     color: rgb(170, 170, 170);
-    font-size: 50px;
+    font-size: 24px;
   }
 
   .choose {
-    width: 140px;
+    width: 70px;
     color: white;
     background-color: rgb(0, 75, 135);
   }
@@ -176,34 +187,34 @@
   .input-number {
     display: flex;
     flex-direction: row;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
   }
 
   .hint-num {
     margin: 0px 23px 0 0;
-    width: 217px;
-    line-height: 105px;
-    font-size: 45px;
+    width: 100px;
+    line-height: 50px;
+    font-size: 24px;
     text-align: center;
     color: white;
     background-color: rgb(0, 75, 135);
   }
 
   .input-num {
-    width: 540px;
-    height: 106px;
+    width: 373px;
+    height: 50px;
   }
 
   .input-num::-webkit-input-placeholder {
     text-align: center;
     color: rgb(170, 170, 170);
-    font-size: 45px;
+    font-size: 24px;
   }
 
   .btnQuery {
-    width: 210px;
-    height: 106px;
-    font-size: 45px;
+    width: 120px;
+    height: 60px;
+    font-size: 28px;
     color: white;
     background-color: rgb(0, 75, 135);
   }

@@ -23,7 +23,7 @@
   @import "../common/font/font.css";
 
   .tab {
-    width: 1860px;
+    width: 100%;
     height: 51px;
     background: linear-gradient(#D6DDEB, #879DBC);
   }
@@ -37,11 +37,11 @@
     display: inline-block;
     padding-right: 5px;
     list-style: none;
-    font-size: 40px;
+    font-size: 20px;
     line-height: 50px;
     vertical-align: top;
     color: white;
-    font-family: 'pingfang', Arial, sans-serif;
+    font-family: Arial, sans-serif;
     background: linear-gradient(#B8C3DC, #7490BA);
   }
 

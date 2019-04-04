@@ -26,8 +26,7 @@
   }
 
   .home-wrapper {
-    width: 1860px;
-    margin-top: 125px;
+    width: 100%;
     display: flex;
     justify-content: center;
   }

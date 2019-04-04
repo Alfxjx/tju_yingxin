@@ -18,7 +18,7 @@
           </ul>
         </div>
       </div>
-      <img class="side-img" src="../../static/img/sqff.png" width="163" height="379" alt="">
+      <img src="../../static/img/sqff.png" width="80" height="190" alt="">
     </div>
   </div>
 </template>
@@ -51,6 +51,7 @@
 
 <style scoped>
   .news-wrapper {
+    width: 100%;
     display: flex;
     flex-direction: row;
     position: relative;
@@ -108,9 +109,10 @@
   .news-main {
     display: flex;
     flex-direction: row;
+    align-items: center;
     margin-top: 20px;
-    margin-right: 99px;
-    width: 1077px;
+    margin-right: 30px;
+    width: 860px;
     height: 546px;
     background-color: white;
     box-shadow: 5px 5px 5px rgba(121, 121, 121, 0.5);
@@ -120,13 +122,10 @@
     margin-left: 100px;
   }
 
-  .side-img {
-    margin: 52px 50px 0px 50px;
-  }
-
   .wrapper ul {
     margin-top: 107px;
-    width: 714px;
+    margin-right: 20px;
+    width: 640px;
     height: 476px;
     padding: 0px;
     display: flex;
@@ -144,7 +143,7 @@
   }
 
   .news-name, .news-time {
-    font-size: 18px;
+    font-size: 16px;
     line-height: 26px;
   }
 

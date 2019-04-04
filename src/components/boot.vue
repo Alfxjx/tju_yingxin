@@ -98,18 +98,18 @@
 
   .one {
     margin-top: 188px;
-    margin-left: 345px;
+    margin-left: 290px;
     margin-right: 80px;
   }
 
   .two {
     margin-top: 188px;
-    margin-right: 380px;
+    margin-right: 260px;
   }
 
   .qrcode {
     margin-top: 208px;
-    margin-right: 100px;
+    margin-right: 70px;
     z-index: 20;
   }
 
@@ -147,8 +147,7 @@
   }
 
   .bottom li {
-    font-family: 'pingfang';
-    font-size: 36px;
+    font-size: 18px;
     color: #D4D4D4;
     line-height: 26px;
   }

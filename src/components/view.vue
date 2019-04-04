@@ -1,26 +1,12 @@
 <template>
   <div class="login">
-    <div class="side-left">
-      <img src="../../static/img/side.png" alt="">
-      <img src="../../static/img/side.png" alt="">
-      <img src="../../static/img/side.png" alt="">
-      <img src="../../static/img/side.png" alt="">
-      <img src="../../static/img/side.png" alt="">
-      <img src="../../static/img/side.png" alt="">
-    </div>
+    <div class="side-left"></div>
     <div class="main">
       <login class="login-component"></login>
       <xuzhi></xuzhi>
       <news></news>
     </div>
-    <div class="side-right">
-      <img src="../../static/img/side.png" alt="">
-      <img src="../../static/img/side.png" alt="">
-      <img src="../../static/img/side.png" alt="">
-      <img src="../../static/img/side.png" alt="">
-      <img src="../../static/img/side.png" alt="">
-      <img src="../../static/img/side.png" alt="">
-    </div>
+    <div class="side-right"></div>
   </div>
 </template>
 
@@ -40,6 +26,7 @@
 <style>
   .login {
     display: flex;
+    width: 80%;
   }
 
   .main {
@@ -52,7 +39,7 @@
   }
 
   .side-left, .side-right {
-    flex: 0 0 175px;
-    margin-top: -20px;
+    flex: 0 0 10%;
+    background-image: url("../../static/img/side.png");
   }
 </style>

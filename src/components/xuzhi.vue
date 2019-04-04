@@ -15,7 +15,7 @@
       <ul class="core-swiper">
         <transition-group name="swipe">
           <li v-for="(picItem, index) in piclist" :key="picItem.name" v-show="index===currentIndex" class="core-list">
-            <img :src="picItem.src" width="806" height="658" alt="">
+            <img :src="picItem.src" width="500" height="500" alt="">
           </li>
         </transition-group>
       </ul>
@@ -96,8 +96,7 @@
 <style scoped>
   .xuzhi {
     padding-left: 35px;
-    margin-top: -64px;
-    margin-bottom: 50px;
+    margin: 10px 0;
     display: flex;
     flex-direction: row;
   }
@@ -116,7 +115,7 @@
     display: flex;
     flex-direction: row;
     position: absolute;
-    bottom: -30px;
+    bottom: 0px;
     left: 10px;
     z-index: 10;
     margin-left: 20px;
@@ -144,11 +143,11 @@
 
   .list {
     background-color: rgba(247, 201, 62, 0.96);
-    margin-left: 650px;
-    margin-top: 60px;
+    margin-left: 450px;
+    margin-top: 30px;
     z-index: 10;
-    height: 542px;
-    width: 264px;
+    height: 480px;
+    width: 200px;
     display: flex;
     justify-content: center;
     align-items: flex-end;
@@ -179,8 +178,8 @@
     background-color: rgb(66, 106, 148);
     z-index: 7;
     width: 484px;
-    height: 376px;
-    margin-top: 228px;
+    height: 370px;
+    margin-top: 137px;
     box-shadow: 5px 5px 5px rgba(121, 121, 121, 0.5);
   }
 
@@ -211,13 +210,13 @@
     list-style: none;
     background-color: white;
     padding-left: 5px;
-    margin-right: 30px;
+    margin-right: 15px;
     line-height: 50px;
     box-shadow: 5px 5px 5px rgba(121, 121, 121, 0.5);
   }
 
   .list-inline-item:first-child {
-    margin-left: 30px;
+    margin-left: 40px;
   }
 
   .list-inline-item a {

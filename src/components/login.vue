@@ -30,11 +30,6 @@
         </ul>
       </div>
     </div>
-    <div class="form">
-      <input class="username" type="text" placeholder="用户名" v-model="userName">
-      <input class="password" type="password" placeholder="密码" v-model="userPassword">
-      <button class="login-button" @click="login">登录</button>
-    </div>
     <div class="danmu">
       <img class="label" src="../../static/img/label.png" width="59" height="76" alt="">
       <span class="to-map" @click="showMap">查看地图</span>
@@ -74,11 +69,10 @@
     display: flex;
     position: relative;
     height: 521px;
+    margin-left: 50px;
     margin-right: 50px;
     background-image: url("../../static/img/door.png");
-    background-position: right;
-    background-size: 1145px 521px;
-    background-repeat: no-repeat;
+    background-size: 100% 100%;
   }
 
   .hint-wrapper {
@@ -165,60 +159,6 @@
     vertical-align: center;
     margin-bottom: 10px;
     margin-right: 20px;
-  }
-
-  .form {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-left: -193px;
-    padding-top: 0px;
-    padding-left: 223px;
-    width: 383px;
-    background-color: rgba(255, 255, 255, 0.6);
-  }
-
-  .username {
-    margin-bottom: 10px;
-    background-color: #2A2A2A;
-    width: 235px;
-    border: 1px solid black;
-    border-radius: 25px;
-    line-height: 45px;
-    text-align: center;
-  }
-
-  .username::-webkit-input-placeholder {
-    color: white;
-    font-size: 18px;
-  }
-
-  .password {
-    margin-bottom: 10px;
-    background-color: #2A2A2A;
-    width: 235px;
-    border: 1px solid black;
-    border-radius: 25px;
-    line-height: 45px;
-    text-align: center;
-    color: white;
-    font-size: 18px;
-  }
-
-  .password::-webkit-input-placeholder {
-    color: white;
-    font-size: 18px;
-  }
-
-  .login-button {
-    background-color: #2A2A2A;
-    width: 235px;
-    border: 1px solid black;
-    border-radius: 25px;
-    line-height: 45px;
-    text-align: center;
-    font-size: 18px;
-    color: white;
   }
 
   .label {
