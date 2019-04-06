@@ -14,9 +14,9 @@
   .tri-down {
     width: 0;
     height: 0;
-    border-left: 69px solid transparent;
-    border-right: 69px solid transparent;
-    border-top: 74px solid rgb(53, 180, 235);
+    border-left: 35px solid transparent;
+    border-right: 35px solid transparent;
+    border-top: 38px solid rgb(53, 180, 235);
   }
 
 </style>

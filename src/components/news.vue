@@ -66,7 +66,7 @@
   .news-title {
     position: absolute;
     top: 21px;
-    left: 202px;
+    left: 180px;
     margin: 0px;
     z-index: 10;
     width: 274px;
@@ -82,7 +82,7 @@
   .yellow {
     position: absolute;
     top: 0px;
-    left: 121px;
+    left: 110px;
     z-index: 5;
     background-color: rgb(254, 194, 16);
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
@@ -93,10 +93,10 @@
   .blue {
     position: absolute;
     top: 78px;
-    left: 88px;
+    left: 68px;
     background-color: rgb(66, 106, 148);
     box-shadow: 5px 5px 5px rgba(121, 121, 121, 0.5);
-    width: 315px;
+    width: 290px;
     height: 218px;
   }
 
@@ -111,9 +111,11 @@
     flex-direction: row;
     align-items: center;
     margin-top: 20px;
+    margin-left: -50px;
     margin-right: 30px;
     width: 860px;
     height: 546px;
+    z-index: 7;
     background-color: white;
     box-shadow: 5px 5px 5px rgba(121, 121, 121, 0.5);
   }

@@ -45,18 +45,18 @@
   }
 
   .error-title {
-    font-size: 57px;
+    font-size: 32px;
   }
 
   .subtitle {
-    font-size: 40px;
+    font-size: 28px;
     font-family: Arial, sans-serif;
     font-weight: 300;
     color: rgb(107, 107, 107);
   }
 
   .links {
-    font-size: 28px;
+    font-size: 20px;
   }
 
   .links a {

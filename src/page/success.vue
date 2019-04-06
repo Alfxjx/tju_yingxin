@@ -3,7 +3,7 @@
     <div class="upper">
       <div class="card1-wrapper">
         <div class="card1">
-          <img class="card1-logo" src="../../static/img/tick.png" width="100px" height="100px" alt="">
+          <img class="card1-logo" src="../../static/img/tick.png" width="50px" height="50px" alt="">
           <p class="card1-title">查询成功!</p>
         </div>
       </div>
@@ -87,7 +87,7 @@
 
   .upper {
     background-color: rgb(53, 180, 235);
-    height: 940px;
+    height: 640px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -95,8 +95,8 @@
 
   .card1-wrapper {
     background-color: white;
-    width: 906px;
-    height: 320px;
+    width: 600px;
+    height: 200px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -106,8 +106,8 @@
 
   .card1 {
     background-color: rgb(53, 180, 235);
-    width: 832px;
-    height: 256px;
+    width: 500px;
+    height: 150px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -120,16 +120,16 @@
 
   .card1-title {
     margin-left: 16px;
-    line-height: 100px;
-    font-size: 70px;
+    line-height: 50px;
+    font-size: 24px;
     color: rgb(25, 75, 125);
   }
 
   .card2-wrapper {
     position: relative;
     background-color: white;
-    width: 906px;
-    height: 357px;
+    width: 600px;
+    height: 250px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -137,7 +137,7 @@
   }
 
   .subtitle-wrapper {
-    width: 906px;
+    width: 620px;
     position: absolute;
     top: -10px;
     left: 0px;
@@ -159,7 +159,7 @@
 
   .subtitle ul li {
     list-style: none;
-    font-size: 30px;
+    font-size: 18px;
     color: rgb(0, 75, 135);
     border: 1px solid white;
     border-radius: 50%;
@@ -170,8 +170,8 @@
 
   .card2 {
     background-color: rgb(53, 180, 235);
-    width: 832px;
-    height: 286px;
+    width: 500px;
+    height: 200px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -185,12 +185,12 @@
   }
 
   .info-table tr:first-child {
-    font-size: 30px;
-    height: 78px;
+    font-size: 14px;
+    height: 30px;
   }
 
   .info-table tr:first-child td {
-    padding: 21px 40px;
+    padding: 10px 20px;
   }
 
   .info-table tr:last-child td {
@@ -198,8 +198,8 @@
   }
 
   .info-table tr:last-child {
-    font-size: 25px;
-    height: 112px;
+    font-size: 16px;
+    height: 50px;
   }
 
   .info-table td {
@@ -231,10 +231,10 @@
   }
 
   .more-title {
-    font-size: 38px;
+    font-size: 22px;
     line-height: 40px;
     color: rgb(255, 166, 0);
-    margin-top: 31px;
+    margin-top: 11px;
     margin-right: 0px;
   }
 
@@ -245,8 +245,8 @@
 
   .bot-bot p {
     color: rgb(121, 121, 121);
-    font-size: 18px;
-    margin: 0px 0px 10px 20px;
+    font-size: 14px;
+    margin: 0px 0px 5px 20px;
   }
 
   .bot-bot p:first-child {
@@ -254,6 +254,6 @@
   }
 
   .bot-bot p:last-child {
-    margin-bottom: 35px;
+    margin-bottom: 25px;
   }
 </style>

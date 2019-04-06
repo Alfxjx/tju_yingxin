@@ -21,7 +21,7 @@
           <p class="hint-province">省份</p>
           <input class="input-pro" type="text" placeholder="选择省份" v-model="location" @click="showList">
           <button class="choose" @click="showList">
-            <img src="../../static/img/down2.png" width="50px" height="28px" alt="">
+            <img src="../../static/img/down2.png" width="20px" height="20px" alt="">
           </button>
         </div>
         <div class="input-number">
@@ -100,7 +100,6 @@
   .main {
     display: flex;
     justify-content: flex-start;
-    padding-left: 200px;
     width: 100%;
     height: 700px;
     background-image: url("../../static/img/query-logo.png");
@@ -113,8 +112,9 @@
     align-items: center;
     flex-direction: column;
     margin-top: 100px;
-    width: 600px;
-    height: 426px;
+    margin-left: 100px;
+    width: 400px;
+    height: 300px;
     background: linear-gradient(rgba(254, 254, 255, 0.7), #DEF4FD, #DCF3FE);
   }
 
@@ -126,11 +126,11 @@
   }
 
   .logo {
-    margin-right: 50px;
+    margin-right: 15px;
   }
 
   .title {
-    font-size: 32px;
+    font-size: 22px;
     color: rgb(254, 194, 16);
   }
 
@@ -138,48 +138,48 @@
     display: flex;
     position: relative;
     flex-direction: row;
-    margin-bottom: 42px;
+    margin-bottom: 22px;
   }
 
   .city-list {
     background-color: #f3f5f7;
-    width: 404px;
-    height: 200px;
+    width: 175px;
+    height: 150px;
     overflow: scroll;
     position: absolute;
-    top: 111px;
-    left: 240px;
+    top: 35px;
+    left: 75px;
     z-index: 10;
   }
 
   .city-item {
-    line-height: 30px;
-    font-size: 24px;
+    line-height: 20px;
+    font-size: 16px;
   }
 
   .hint-province {
-    margin: 0px 23px 0 0;
-    width: 100px;
-    line-height: 50px;
-    font-size: 24px;
+    margin: 0px 13px 0 0;
+    width: 60px;
+    line-height: 30px;
+    font-size: 18px;
     text-align: center;
     color: white;
     background-color: rgb(0, 75, 135);
   }
 
   .input-pro {
-    width: 300px;
-    height: 50px;
+    width: 170px;
+    height: 30px;
   }
 
   .input-pro::-webkit-input-placeholder {
     text-align: center;
     color: rgb(170, 170, 170);
-    font-size: 24px;
+    font-size: 16px;
   }
 
   .choose {
-    width: 70px;
+    width: 40px;
     color: white;
     background-color: rgb(0, 75, 135);
   }
@@ -191,35 +191,38 @@
   }
 
   .hint-num {
-    margin: 0px 23px 0 0;
-    width: 100px;
-    line-height: 50px;
-    font-size: 24px;
+    margin: 0px 5px 0 0;
+    width: 70px;
+    line-height: 30px;
+    font-size: 18px;
     text-align: center;
+    vertical-align: center;
     color: white;
     background-color: rgb(0, 75, 135);
   }
 
   .input-num {
-    width: 373px;
-    height: 50px;
+    width: 210px;
+    height: 30px;
   }
 
   .input-num::-webkit-input-placeholder {
     text-align: center;
     color: rgb(170, 170, 170);
-    font-size: 24px;
+    font-size: 16px;
   }
 
   .btnQuery {
-    width: 120px;
-    height: 60px;
-    font-size: 28px;
+    width: 70px;
+    height: 30px;
+    font-size: 16px;
     color: white;
+    box-shadow: 5px 5px 5px rgba(121, 121, 121, 0.5);
     background-color: rgb(0, 75, 135);
   }
 
   .choose-city {
     list-style: none;
+    padding-left: 10px;
   }
 </style>
