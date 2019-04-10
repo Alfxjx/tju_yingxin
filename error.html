@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <style>
+        body{
+            margin:0;
+        }
+        .error-wrapper {
+          background-color: rgb(186, 233, 253);
+          margin: -8px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+      
+        .error-title {
+          font-size: 32px;
+        }
+      
+        .subtitle {
+          font-size: 28px;
+          font-family: Arial, sans-serif;
+          font-weight: 300;
+          color: rgb(107, 107, 107);
+        }
+      
+        .links {
+          font-size: 20px;
+        }
+      
+        .links a {
+          color: rgb(255, 166, 0);
+        }
+      
+        .refresh {
+          text-decoration: underline;
+          color: rgb(255, 166, 0);
+        }
+      
+        .error-img {
+          padding-left: 370px;
+        }
+      </style>
+    <title>404</title>
+</head>
+<body>
+    <div class="error-wrapper" id="container">
+        <div class="error">
+          <span class="error-title">抱歉，您访问的页面失联啦!</span>
+          <h2 class="subtitle">小天正在努力找回……</h2>
+          <p class="links">
+            <span class="refresh">返回首页</span>
+            或
+            <span class="refresh">刷新一下</span>
+          </p>
+          <img class="error-img" src="./img/404.png" width="525px" height="400px" alt="">
+        </div>
+    </div>
+    <script>
+        let h = document.documentElement.clientHeight || document.body.clientHeight;
+        document.getElementById("container").style.paddingTop = h - 570 + 'px';
+    </script>
+</body>
+</html>

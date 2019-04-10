@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./fail.css">
+    <title>查询失败</title>
+</head>
+<body>
+    <div class="fail">
+        <div class="upper">
+          <div class="card">
+            <div class="head">
+              <img class="fail-logo" width="100px" height="100px" src="./img/fail-logo.png" alt="">
+              <p class="fail-title">未查询到该生信息!</p>
+            </div>
+            <div class="reason">
+              <ul>
+                <li id="reason-title">可能原因如下：</li>
+                <li class="content">考生录取失败；</li>
+                <li class="content">
+                  登录入口未刷新，请刷新页面，重新
+                  <router-link to="/query">登录</router-link>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="bot">
+          <div class="bot-head">
+            <span id="bot-head-content1">如有其它问题，请致电</span><span id="bot-head-content2">天津大学招生办：022-xxxxxxxx</span>
+          </div>
+          <div class="bot-main">
+            <div class="links">
+              <span class="links-title">相关网站</span>
+              <ul class="link-ul">
+                <li class="link-item">
+                    天津大学
+                </li>
+                <li class="link-item">
+                    迎新网
+                </li>
+                <li class="link-item">
+                    天津大学办公网
+                </li>
+                <li class="link-item">
+                    招生网
+                </li>
+              </ul>
+            </div>
+            <div class="qrcode">
+              <img class="qr-pic" src="./img/qrcode.JPG" width="135px" height="138px" alt="">
+              <p class="qr-desc">天津大学招生办官方微信</p>
+            </div>
+          </div>
+          <div class="bot-bot">
+            <div class="bot-bot-placeholder"></div>
+            <div class="bot-wrapper">
+              <ul>
+                <li class="bot-info" id="first-info">地址：天津市南开区卫津路92号 | 邮编：300072</li>
+                <li class="bot-info">天津大学信息与网络中心制作 津ICP备05004358号 津教备0316号</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+</body>
+</html>

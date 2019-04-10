@@ -1,12 +1,229 @@
-<!DOCTYPE html>
 <html>
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scale=no">
-  <title>yinxin2</title>
-</head>
-<body>
-<div id="app"></div>
-<!-- built files will be auto injected -->
-</body>
+    <head>
+        <title>天津大学迎新网首页</title>
+        <link rel="stylesheet" href="./index.css">
+    </head>
+    <body>
+        <div id="index">
+            <div class="tab">
+                <ul class="tab-list">
+                    <li class="tab-list-item">网站首页</li>
+                    <li class="tab-list-item">报道服务</li>
+                    <li class="tab-list-item">天大风采</li>
+                    <li class="tab-list-item">学在天大</li>
+                    <li class="tab-list-item">家在天大</li>
+                    <li class="tab-list-item">新生答疑</li>
+                </ul>
+            </div>
+            <div class="home-wrapper">
+                <div class="home">
+                    <img class="head-img" src="./img/head.png" alt="">
+                    <div class="welcome cover">
+                        <img class="logo" src="./img/logo.png" width="157px" height="137px" alt="">
+                        <div class="home-title-wrapper">
+                        <span class="home-title">欢迎来到天津大学！</span>
+                        <span class="home-subtitle">Welcome to Tianjin University</span>
+                        </div>
+                    </div>
+                </div>      
+            </div>
+            <div class="login-out">
+                <div class="side-left"></div>
+                <div class="main">
+                    <div class="login-component">
+                        <div class="wrapper">
+                            <div class="deng-wrapper">
+                                <div class="deng">
+                                <span class="deng-item">登</span>
+                                <span class="deng-item"><img src="./img/fullShield.png" alt=""></span>
+                                </div>
+                            </div>
+                            <div class="login">
+                                <div class="hint-wrapper">
+                                <div class="login-hint">
+                                    <h2>新生</h2>
+                                    <h2>登录</h2>
+                                </div>
+                                </div>
+                                <div class="list-wrapper">
+                                <ul class="login-list">
+                                    <li class="login-item">
+                                    <span class="login-text">本科生</span>
+                                    <span><img src="./img/smallShield.png" height="50px" alt=""></span>
+                                    </li>
+                                    <li class="login-item">
+                                    <span class="login-text">研究生</span>
+                                    <span><img src="./img/smallShield.png" height="50px" alt=""></span>
+                                    </li>
+                                    <li class="login-item">
+                                    <span class="login-text">高职生</span>
+                                    <span><img src="./img/smallShield.png" height="50px" alt=""></span>
+                                    </li>
+                                </ul>
+                                </div>
+                            </div>
+                            <div class="danmu">
+                                <img class="label" src="./img/label.png" width="59" height="76" alt="">
+                                <span class="to-map" @click="showMap">查看地图</span>
+                                <div class="flow"></div>
+                                <div class="ctrl">
+                                <input class="danmu-input" type="text" placeholder="登录发送弹幕">
+                                <button class="send">发送</button>
+                                </div>
+                            </div>
+                            <!--<img src="../../static/img/door.png" alt="">-->
+                        </div>
+                    </div>
+                    <!-- <xuzhi></xuzhi> -->
+                    <div class="xuzhi">
+                        <img src="./img/swiper.png" width="806" height="658" alt="">   
+                        <div class="list">
+                            <div class="list-wrapper">
+                                <ul class="link-list">
+                                    <li class="link-list-item">
+                                        <a href="#">入校行程</a>
+                                    </li>
+                                    <li class="link-list-item">
+                                        <a href="#">先找学院</a>
+                                    </li>
+                                    <li class="link-list-item">
+                                        <a href="#">缴费</a>
+                                    </li>
+                                    <li class="link-list-item">
+                                        <a href="#">党团关系及档案</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="title">
+                            <div class="title-wrapper">
+                                <h2 class="title-font">报道</h2>
+                                <h2 class="title-font">须知</h2>
+                            </div>
+                            <ul class="list-inline">
+                                <li class="list-inline-item">
+                                    <a href="#">一卡通</a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a href="#">绿色通道</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- <news></news> -->
+                    <div class="news-wrapper">
+                        <h2 class="news-title">迎新快讯</h2>
+                        <div class="left">
+                            <div class="yellow"></div>
+                            <div class="blue"></div>
+                            <img class="school" src="./img/school.JPG" width="336" height="236" alt="">
+                        </div>
+                        <div class="news-main">
+                            <div class="news-list">
+                            <div class="news-list-wrapper">
+                                <ul class="news-list-wrapper-ul">
+                                    <li>MORE>></li>
+                                    <li>
+                                        <span class="news-name">天津大学校园卡使用手册（新生版）</span>
+                                        <span class="news-time">[2018-10-19]</span>
+                                    </li>
+                                    <li>
+                                        <span class="news-name">天津大学2018级本科生报到须知——报到注册</span>
+                                        <span class="news-time">[2018-10-19]</span>
+                                    </li>
+                                    <li>
+                                        <span class="news-name">天津大学2018级本科生报到须知——入学考试及主修科目等信息</span>
+                                        <span class="news-time">[2018-10-19]</span>
+                                    </li>
+                                    <li>
+                                        <span class="news-name">天津大学2018级本科生报到须知——户口迁移</span>
+                                        <span class="news-time">[2018-10-19]</span>
+                                    </li>
+                                    <li>
+                                        <span class="news-name">天津大学2018级本科生报到须知——党团关系及档案</span>
+                                        <span class="news-time">[2018-10-19]</span>
+                                    </li>
+                                    <li>
+                                        <span class="news-name">天津大学2018级本科生报到须知——收费项目及交费方式</span>
+                                        <span class="news-time">[2018-10-19]</span>
+                                    </li>
+                                    <li>
+                                        <span class="news-name">天津大学校园卡使用手册（新生版）</span>
+                                        <span class="news-time">[2018-10-19]</span>
+                                    </li>
+                                    <li>
+                                        <span class="news-name">天津大学2018级本科生报到须知——报到注册</span>
+                                        <span class="news-time">[2018-10-19]</span>
+                                    </li>
+                                    <li>
+                                        <span class="news-name">天津大学2018级本科生报到须知——入学考试及主修科目等信息</span>
+                                        <span class="news-time">[2018-10-19]</span>
+                                    </li>
+                                    <li>
+                                        <span class="news-name">天津大学2018级本科生报到须知——户口迁移</span>
+                                        <span class="news-time">[2018-10-19]</span>
+                                    </li>
+                                    <li>
+                                        <span class="news-name">天津大学2018级本科生报到须知——党团关系及档案</span>
+                                        <span class="news-time">[2018-10-19]</span>
+                                    </li>
+                                    <li>
+                                        <span class="news-name">天津大学2018级本科生报到须知——收费项目及交费方式</span>
+                                        <span class="news-time">[2018-10-19]</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            </div>
+                            <img src="./img/sqff.png" width="80" height="190" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="side-right"></div>
+            </div>
+            <div class="boot">
+                <div class="boot-cover"></div>
+                <!--<img src="../../static/img/boot.png" width="100%" height="100%" alt="">-->
+                <div class="link one">
+                    <span class="boot-title">相关网站</span>
+                    <ul>
+                        <li class="link-li">
+                            <a class="boot-link-item" href="#">天津大学</a>
+                        </li>
+                        <li class="link-li">
+                            <a class="boot-link-item" href="#">招生网</a>
+                        </li>
+                        <li class="link-li">
+                            <a class="boot-link-item" href="#">天津大学办公网</a>
+                        </li>
+                        <li class="link-li">
+                            <a class="boot-link-item" href="#">迎新网</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="link two">
+                    <span class="boot-title">融入天大</span>
+                    <ul>
+                        <li class="link-li">
+                            <a class="boot-link-item" href="#">天津大学学生会</a>
+                        </li>
+                        <li class="link-li">
+                            <a class="boot-link-item" href="#">天外天</a>
+                        </li>
+                        <li class="link-li">
+                            <a class="boot-link-item" href="#">求实BBS</a>
+                        </li>
+                    </ul>
+                </div>
+                <img class="qrcode" src="./img/qrcode.JPG" width="129px" height="129px" alt="">
+                <img class="shield" src="./img/shield.png" width="120" height="156" alt="">
+                <div class="bottom">
+                    <ul>
+                        <li>地址：天津市南开区卫津路92号 | 邮编：300072</li>
+                        <li>天津大学信息与网络中心制作 津ICP备05004358号 津教备0316号</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <script src="./index.js"></script>
+    </body>
 </html>
