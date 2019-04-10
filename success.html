@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./success.css">
+    <title>查询成功</title>
+</head>
+<body>
+    <div class="success">
+        <div class="upper">
+          <div class="card1-wrapper">
+            <div class="card1">
+              <img class="card1-logo" src="./img/tick.png" width="50px" height="50px" alt="">
+              <p class="card1-title">查询成功!</p>
+            </div>
+          </div>
+          <div class="card2-wrapper">
+            <div class="subtitle-wrapper">
+              <div class="subtitle">
+                <ul>
+                    <li>学</li>
+                    <li>生</li>
+                    <li>信</li>
+                    <li>息</li>
+                </ul>
+              </div>
+            </div>
+            <div class="card2">
+              <table class="info-table">
+                <tr>
+                  <td>考生号</td>
+                  <td>姓名</td>
+                  <td>录取专业</td>
+                  <td>所在学院</td>
+                </tr>
+                <tr>
+                    <td>1234556</td>
+                    <td>张三</td>
+                    <td>化工工程</td>
+                    <td>化工学院</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+        <div class="bot">
+          <div class="more-wrapper">
+            <div class="more" @click="showMore">
+                <div class="tri-down">
+                    <span></span>
+                </div>
+              <p class="more-title">下拉了解更多迎新信息!</p>
+            </div>
+          </div>
+          <div class="bot-bot">
+            <p>地址：天津市南开区卫津路92号 | 邮编：300072</p>
+            <p>天津大学信息与网络中心制作 津ICP备05004358号 津教备0316号</p>
+          </div>
+        </div>
+      </div>
+</body>
+</html>
