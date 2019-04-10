@@ -1,21 +1,11 @@
-# yinxin2
+# 天津大学迎新网
 
-> A Vue.js project
+[在线预览](https://alfxjx.github.io/tju_yingxin/)
 
-## Build Setup
+[在线查询](https://alfxjx.github.io/StudentQuery/)
 
-``` bash
-# install dependencies
-npm install
+[查询成功](https://alfxjx.github.io/tju_yingxin/success.html)
 
-# serve with hot reload at localhost:8080
-npm run dev
+[查询失败](https://alfxjx.github.io/tju_yingxin/fail.html)
 
-# build for production with minification
-npm run build
-
-# build for production and view the bundle analyzer report
-npm run build --report
-```
-
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+[查询出错](https://alfxjx.github.io/tju_yingxin/error.html)
